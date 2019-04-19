@@ -37,7 +37,8 @@ setup(
     keywords=['certbot', 'selectel'],
     entry_points={
         'certbot.plugins': [
-            'auth = certbot_selectel_storage.selectel_storage:Authenticator'
+            'auth = certbot_selectel_storage.selectel_storage:Authenticator',
+            'installer = certbot_selectel_storage.selectel_storage:Installer',
         ],
     },
 )
